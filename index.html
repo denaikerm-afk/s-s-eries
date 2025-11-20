@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error 404 - Página no encontrada</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 8rem;
+      margin: 0;
+      color: #ff6f61;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 10px 0 20px;
+    }
+
+    a {
+      text-decoration: none;
+      background: #ff6f61;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background: #e55b50;
+    }
+
+    /* Pequeño efecto de animación */
+    .cloud {
+      position: absolute;
+      width: 200px;
+      height: 60px;
+      background: #fff;
+      border-radius: 50%;
+      top: 10%;
+      animation: float 10s linear infinite;
+    }
+
+    .cloud:nth-child(2) {
+      width: 150px;
+      height: 50px;
+      top: 20%;
+      left: 60%;
+      animation-duration: 12s;
+    }
+
+    @keyframes float {
+      0% { transform: translateX(-300px); }
+      100% { transform: translateX(100vw); }
+    }
+  </style>
+</head>
+<body>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  
+  <h1>404</h1>
+  <h2>Página no encontrada</h2>
+  <p>Lo sentimos, la página que buscas no existe o ha sido movida.</p>
+  
+</body>
+</html>
